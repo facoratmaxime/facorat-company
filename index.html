@@ -174,9 +174,9 @@
 
         .element-plane {
             position: absolute;
-            font-size: 5rem;
+            font-size: 10rem;
             color: #0056b3;
-            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
             z-index: 2;
         }
 
@@ -185,14 +185,14 @@
             opacity: 0;
             transform: scale(0.9) translateY(10px);
             filter: blur(4px);
-            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 3);
             background: #ffffff;
             padding: 24px;
             border-radius: 12px;
             border: 1px solid #e2e8f0;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
             font-family: 'Fira Code', 'Courier New', monospace;
-            font-size: 0.95rem;
+            font-size: 2.5rem;
             line-height: 1.5;
             z-index: 1;
         }
@@ -237,9 +237,9 @@
             position: absolute;
             bottom: 10%;
             width: 200px;
-            height: 3px;
+            height: 10px;
             background: #e2e8f0;
-            border-radius: 2px;
+            border-radius: 8px;
             overflow: hidden;
         }
 
@@ -247,7 +247,7 @@
             width: 0%;
             height: 100%;
             background: #0056b3;
-            animation: fillProgress 1.5s ease-in-out forwards;
+            animation: fillProgress 3s ease-in-out forwards;
         }
 
         @keyframes fillProgress {
@@ -276,7 +276,7 @@
         </div>
         <!-- Phase 2 : Le bloc de code -->
         <div class="element-code">
-            <pre><code><span class="token-keyword">&lt;?php</span>
+            <pre><i class="fa-solid fa-computer fa-3x mx-auto"></i><code><span class="token-keyword"><br> &lt;?php</span>
 <span class="token-namespace">namespace</span> <span class="token-class">Pilot</span>;
 <span class="token-keyword">class</span> <span class="token-class">Flight</span> <span
                         class="token-keyword">extends</span> <span class="token-class">Developer</span> {
@@ -346,10 +346,13 @@
                         de pilote de ligne (ATPL). J'apporte la rigueur du cockpit, la discipline structurelle et la
                         résolution de problèmes complexes aux architectures Laravel de haute performance.</p>
                     <!-- Nouveau bloc : Accessibilité Non-Tech -->
-                    <div class="p-3 bg-white border start-0 rounded-3 mb-4 d-flex align-items-center justify-content-center justify-content-md-start gap-3 shadow-sm" style="max-width: 650px;">
+                    <div class="p-3 bg-white border start-0 rounded-3 mb-4 d-flex align-items-center justify-content-center justify-content-md-start gap-3 shadow-sm"
+                         style="max-width: 650px;">
                         <i class="bi bi-chat-heart text-laravel fs-3"></i>
                         <p class="mb-0 text-secondary text-start small">
-                            <strong>Vous n'êtes pas du métier ?</strong> Pas de panique. Je traduis vos besoins métiers en solutions web concrètes, sans jargon technique, et je vous accompagne pas à pas de la conception à la mise en ligne.
+                            <strong>Vous n'êtes pas du métier ?</strong> Pas de panique. Je traduis vos besoins métiers
+                            en solutions web concrètes, sans jargon technique, et je vous accompagne pas à pas de la
+                            conception à la mise en ligne.
                         </p>
                     </div>
                 </div>
@@ -360,10 +363,13 @@
                         Transport Pilot License (ATPL). I bring cockpit-level rigor, structural discipline, and complex
                         problem-solving to high-performance Laravel architectures.</p>
                     <!-- New Block: Non-Tech Accessibility (EN) -->
-                    <div class="p-3 bg-white border start-0 rounded-3 mb-4 d-flex align-items-center justify-content-center justify-content-md-start gap-3 shadow-sm" style="max-width: 650px;">
+                    <div class="p-3 bg-white border start-0 rounded-3 mb-4 d-flex align-items-center justify-content-center justify-content-md-start gap-3 shadow-sm"
+                         style="max-width: 650px;">
                         <i class="bi bi-chat-heart text-laravel fs-3"></i>
                         <p class="mb-0 text-secondary text-start small">
-                            <strong>Not a tech expert?</strong> No worries. I translate your business goals into seamless web realities without the confusing jargon, guiding you smoothly from initial ideas to final deployment.
+                            <strong>Not a tech expert?</strong> No worries. I translate your business goals into
+                            seamless web realities without the confusing jargon, guiding you smoothly from initial ideas
+                            to final deployment.
                         </p>
                     </div>
                 </div>
@@ -722,14 +728,19 @@
         <div class="text-center mb-4">
             <h2 class="fw-bold mb-3" data-lang="fr">Planifions votre prochain décollage technique</h2>
             <h2 class="fw-bold mb-3" data-lang="en">Planning Your Next Technical Take-Off?</h2>
-            <p class="text-muted lead mb-4 mx-auto" style="max-width: 600px;" data-lang="fr">Que ce soit pour auditer une codebase Laravel, concevoir une architecture robuste ou encadrer des équipes techniques, échangeons sur vos objectifs.</p>
-            <p class="text-muted lead mb-4 mx-auto" style="max-width: 600px;" data-lang="en">Whether you need a full Laravel codebase audit, scalable backend engineering, or technical mentorship, let’s discuss your targets.</p>
+            <p class="text-muted lead mb-4 mx-auto" style="max-width: 600px;" data-lang="fr">Que ce soit pour auditer
+                une codebase Laravel, concevoir une architecture robuste ou encadrer des équipes techniques, échangeons
+                sur vos objectifs.</p>
+            <p class="text-muted lead mb-4 mx-auto" style="max-width: 600px;" data-lang="en">Whether you need a full
+                Laravel codebase audit, scalable backend engineering, or technical mentorship, let’s discuss your
+                targets.</p>
         </div>
 
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6">
                 <!-- Formulaire FormSubmit Complet -->
-                <form action="https://formsubmit.co/facorat.company@gmail.com" method="POST" class="bg-white p-4 rounded-4 shadow-sm border">
+                <form action="https://formsubmit.co/facorat.company@gmail.com" method="POST"
+                      class="bg-white p-4 rounded-4 shadow-sm border">
                     <!-- Configuration FormSubmit -->
                     <input type="hidden" name="_next" value="https://facoratmaxime.github.io/facorat-company/">
                     <input type="hidden" name="_subject" value="Nouveau contact depuis le Portfolio !">
@@ -740,7 +751,8 @@
                             <span data-lang="fr">Votre adresse e-mail</span>
                             <span data-lang="en">Your Email Address</span>
                         </label>
-                        <input type="email" name="email" id="user_email" class="form-control" placeholder="name@example.com" required>
+                        <input type="email" name="email" id="user_email" class="form-control"
+                               placeholder="name@example.com" required>
                     </div>
 
                     <!-- Champ Message -->
@@ -749,7 +761,8 @@
                             <span data-lang="fr">Votre message</span>
                             <span data-lang="en">Your Message</span>
                         </label>
-                        <textarea name="message" id="user_message" class="form-control" rows="4" placeholder="..." required></textarea>
+                        <textarea name="message" id="user_message" class="form-control" rows="4" placeholder="..."
+                                  required></textarea>
                     </div>
 
                     <!-- Boutons d'action -->
@@ -759,7 +772,8 @@
                             <span data-lang="fr">Envoyer le message</span>
                             <span data-lang="en">Send Message</span>
                         </button>
-                        <a href="https://www.linkedin.com/in/maxime-facorat-0470a057" target="_blank" class="btn btn-linkedin btn-lg px-4 flex-grow-1 flex-sm-grow-0">
+                        <a href="https://www.linkedin.com/in/maxime-facorat-0470a057" target="_blank"
+                           class="btn btn-linkedin btn-lg px-4 flex-grow-1 flex-sm-grow-0">
                             <i class="bi bi-linkedin me-2"></i>LinkedIn Profile
                         </a>
                     </div>
