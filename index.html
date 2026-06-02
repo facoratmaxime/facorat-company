@@ -19,22 +19,32 @@
             --light-hero-bg: #f8fafc;
             --logo-orange: #f5b349;
         }
-        .text-laravel { color: var(--laravel-color); }
-        .text-aviation { color: var(--aviation-blue); }
+
+        .text-laravel {
+            color: var(--laravel-color);
+        }
+
+        .text-aviation {
+            color: var(--aviation-blue);
+        }
+
         .btn-laravel {
             background-color: var(--laravel-color);
             color: white;
             border: none;
         }
+
         .btn-laravel:hover {
             background-color: #e0261a;
             color: white;
         }
+
         .btn-linkedin {
             background-color: var(--linkedin-color);
             color: white;
             border: none;
         }
+
         .btn-linkedin:hover {
             background-color: #005a8a;
             color: white;
@@ -52,16 +62,19 @@
             min-height: 70vh;
             border-bottom: 1px solid #cbd5e1;
         }
+
         /* Custom Timeline style */
         .timeline {
             border-left: 3px solid #cbd5e1;
             padding-left: 20px;
             position: relative;
         }
+
         .timeline-item {
             position: relative;
             padding-bottom: 25px;
         }
+
         .timeline-item::after {
             content: '';
             position: absolute;
@@ -72,16 +85,20 @@
             top: 5px;
             left: -29px;
         }
+
         .timeline-item.aviation::after {
             background-color: var(--aviation-blue);
         }
+
         .project-card {
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
+
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
         }
+
         .skill-badge {
             background-color: #ffffff;
             color: #334155;
@@ -94,29 +111,36 @@
             margin-bottom: 0.5rem;
             border: 1px solid #cbd5e1;
         }
+
         /* Logo styling for Navbar */
         .navbar-logo {
             height: 40px;
             width: auto;
             object-fit: contain;
         }
+
         /* Multi-lang visibility rules */
         [data-lang] {
             display: none !important;
         }
+
         html[lang="fr"] [data-lang="fr"] {
             display: block !important;
         }
+
         html[lang="en"] [data-lang="en"] {
             display: block !important;
         }
+
         /* Inline elements override */
         html[lang="fr"] span[data-lang="fr"], html[lang="fr"] i[data-lang="fr"] {
             display: inline-block !important;
         }
+
         html[lang="en"] span[data-lang="en"], html[lang="en"] i[data-lang="en"] {
             display: inline-block !important;
         }
+
         .lang-switch-btn {
             cursor: pointer;
             font-weight: 600;
@@ -173,11 +197,27 @@
             z-index: 1;
         }
 
-        .token-keyword { color: #e11d48; font-weight: bold; }
-        .token-namespace { color: #4b5563; }
-        .token-class { color: #0056b3; font-weight: 600; }
-        .token-function { color: #0f172a; }
-        .token-string { color: #2563eb; }
+        .token-keyword {
+            color: #e11d48;
+            font-weight: bold;
+        }
+
+        .token-namespace {
+            color: #4b5563;
+        }
+
+        .token-class {
+            color: #0056b3;
+            font-weight: 600;
+        }
+
+        .token-function {
+            color: #0f172a;
+        }
+
+        .token-string {
+            color: #2563eb;
+        }
 
         /* ÉTAPES DE L'ANIMATION LOADER */
         #clear-loader.phase-transform .element-plane {
@@ -202,6 +242,7 @@
             border-radius: 2px;
             overflow: hidden;
         }
+
         .progress-bar {
             width: 0%;
             height: 100%;
@@ -210,8 +251,12 @@
         }
 
         @keyframes fillProgress {
-            0% { width: 0%; }
-            100% { width: 100%; }
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 100%;
+            }
         }
 
         #clear-loader.fade-out {
@@ -233,7 +278,8 @@
         <div class="element-code">
             <pre><code><span class="token-keyword">&lt;?php</span>
 <span class="token-namespace">namespace</span> <span class="token-class">Pilot</span>;
-<span class="token-keyword">class</span> <span class="token-class">Flight</span> <span class="token-keyword">extends</span> <span class="token-class">Developer</span> {
+<span class="token-keyword">class</span> <span class="token-class">Flight</span> <span
+                        class="token-keyword">extends</span> <span class="token-class">Developer</span> {
     <span class="token-keyword">public</span> <span class="token-keyword">function</span> <span class="token-function">takeOff</span>() {
         <span class="token-keyword">return</span> <span class="token-string">'Laravel deployed.'</span>;
     }
@@ -261,11 +307,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto text-center align-items-center">
-                <li class="nav-item"><a class="nav-link fw-medium" href="#about" data-lang="fr">À propos</a><a class="nav-link fw-medium" href="#about" data-lang="en">About</a></li>
-                <li class="nav-item"><a class="nav-link fw-medium" href="#skills" data-lang="fr">Compétences</a><a class="nav-link fw-medium" href="#skills" data-lang="en">Skills</a></li>
-                <li class="nav-item"><a class="nav-link fw-medium" href="#experience" data-lang="fr">Parcours</a><a class="nav-link fw-medium" href="#experience" data-lang="en">Experience</a></li>
-                <li class="nav-item"><a class="nav-link fw-medium" href="#projects" data-lang="fr">Expertise</a><a class="nav-link fw-medium" href="#projects" data-lang="en">Expertise</a></li>
-                <li class="nav-item"><a class="nav-link fw-medium" href="#contact" data-lang="fr">Contact</a><a class="nav-link fw-medium" href="#contact" data-lang="en">Contact</a></li>
+                <li class="nav-item"><a class="nav-link fw-medium" href="#about" data-lang="fr">À propos</a><a
+                        class="nav-link fw-medium" href="#about" data-lang="en">About</a></li>
+                <li class="nav-item"><a class="nav-link fw-medium" href="#skills" data-lang="fr">Compétences</a><a
+                        class="nav-link fw-medium" href="#skills" data-lang="en">Skills</a></li>
+                <li class="nav-item"><a class="nav-link fw-medium" href="#experience" data-lang="fr">Parcours</a><a
+                        class="nav-link fw-medium" href="#experience" data-lang="en">Experience</a></li>
+                <li class="nav-item"><a class="nav-link fw-medium" href="#projects" data-lang="fr">Expertise</a><a
+                        class="nav-link fw-medium" href="#projects" data-lang="en">Expertise</a></li>
+                <li class="nav-item"><a class="nav-link fw-medium" href="#contact" data-lang="fr">Contact</a><a
+                        class="nav-link fw-medium" href="#contact" data-lang="en">Contact</a></li>
                 <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
                     <button id="langSwitcher" class="btn btn-outline-secondary btn-sm lang-switch-btn px-2 py-1">
                         <span data-lang="fr">🇬🇧 EN</span>
@@ -273,7 +324,8 @@
                     </button>
                 </li>
                 <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-                    <a class="btn btn-sm btn-linkedin px-3" href="https://www.linkedin.com/in/maxime-facorat-0470a057/" target="_blank">
+                    <a class="btn btn-sm btn-linkedin px-3" href="https://www.linkedin.com/in/maxime-facorat-0470a057/"
+                       target="_blank">
                         <i class="bi bi-linkedin me-1"></i> LinkedIn
                     </a>
                 </li>
@@ -288,21 +340,32 @@
         <div class="row align-items-center">
             <div class="col-md-8">
                 <div data-lang="fr">
-                    <h1 class="display-4 fw-bold mb-3 text-slate-900">Ingénieur Laravel Indépendant <br>& <span class="text-aviation">Instructeur de Vol</span></h1>
-                    <p class="lead text-muted mb-4">Diplômé d'un Master en ingénierie informatique combiné à une licence de pilote de ligne (ATPL). J'apporte la rigueur du cockpit, la discipline structurelle et la résolution de problèmes complexes aux architectures Laravel de haute performance.</p>
+                    <h1 class="display-4 fw-bold mb-3 text-slate-900">Ingénieur Laravel Indépendant <br>& <span
+                            class="text-aviation">Instructeur de Vol</span></h1>
+                    <p class="lead text-muted mb-4">Diplômé d'un Master en ingénierie informatique combiné à une licence
+                        de pilote de ligne (ATPL). J'apporte la rigueur du cockpit, la discipline structurelle et la
+                        résolution de problèmes complexes aux architectures Laravel de haute performance.</p>
                 </div>
                 <div data-lang="en">
-                    <h1 class="display-4 fw-bold mb-3 text-slate-900">Freelance Laravel Engineer <br>& <span class="text-aviation">Flight Instructor</span></h1>
-                    <p class="lead text-muted mb-4">Master's degree in Computer Engineering combined with an Airline Transport Pilot License (ATPL). I bring cockpit-level rigor, structural discipline, and complex problem-solving to high-performance Laravel architectures.</p>
+                    <h1 class="display-4 fw-bold mb-3 text-slate-900">Freelance Laravel Engineer <br>& <span
+                            class="text-aviation">Flight Instructor</span></h1>
+                    <p class="lead text-muted mb-4">Master's degree in Computer Engineering combined with an Airline
+                        Transport Pilot License (ATPL). I bring cockpit-level rigor, structural discipline, and complex
+                        problem-solving to high-performance Laravel architectures.</p>
                 </div>
                 <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start">
-                    <a href="#experience" class="btn btn-laravel btn-lg px-4"><span data-lang="fr">Parcours</span><span data-lang="en">Track Record</span></a>
-                    <a href="https://www.linkedin.com/in/maxime-facorat-0470a057/" target="_blank" class="btn btn-linkedin btn-lg px-4"><i class="bi bi-linkedin me-2"></i><span data-lang="fr">Discutons sur LinkedIn</span><span data-lang="en">Connect on LinkedIn</span></a>
-                    <a href="#contact" class="btn btn-outline-dark btn-lg px-4"><span data-lang="fr">Me contacter</span><span data-lang="en">Get In Touch</span></a>
+                    <a href="#experience" class="btn btn-laravel btn-lg px-4"><span data-lang="fr">Parcours</span><span
+                            data-lang="en">Track Record</span></a>
+                    <a href="https://www.linkedin.com/in/maxime-facorat-0470a057/" target="_blank"
+                       class="btn btn-linkedin btn-lg px-4"><i class="bi bi-linkedin me-2"></i><span data-lang="fr">Discutons sur LinkedIn</span><span
+                            data-lang="en">Connect on LinkedIn</span></a>
+                    <a href="#contact" class="btn btn-outline-dark btn-lg px-4"><span data-lang="fr">Me contacter</span><span
+                            data-lang="en">Get In Touch</span></a>
                 </div>
             </div>
             <div class="col-md-4 text-center d-none d-md-block">
-                <img src="logo.png" alt="Facorat Company" class="img-fluid rounded-4 shadow-sm border" style="max-width: 85%;">
+                <img src="logo.png" alt="Facorat Company" class="img-fluid rounded-4 shadow-sm border"
+                     style="max-width: 85%;">
             </div>
         </div>
     </div>
@@ -315,13 +378,23 @@
             <div class="col-lg-5">
                 <div data-lang="fr">
                     <h2 class="fw-bold mb-4">L'avantage du double profil</h2>
-                    <p class="text-muted">En tant qu'<strong>Ingénieur Logiciel Freelance</strong> et <strong>Instructeur de Vol</strong>, je conçois des applications avec la même méthodologie stricte de listes de vérification (checklists) requise pour piloter des avions commerciaux. Sûr, fiable, optimisé et rigoureusement testé.</p>
-                    <p class="text-muted">Fort de plusieurs années d'expérience backend au sein d'institutions bancaires, de grands groupes, d'entités publiques et de startups, je maîtrise les flux de données complexes, les contraintes de sécurité strictes et les exigences des architectures modernes.</p>
+                    <p class="text-muted">En tant qu'<strong>Ingénieur Logiciel Freelance</strong> et <strong>Instructeur
+                        de Vol</strong>, je conçois des applications avec la même méthodologie stricte de listes de
+                        vérification (checklists) requise pour piloter des avions commerciaux. Sûr, fiable, optimisé et
+                        rigoureusement testé.</p>
+                    <p class="text-muted">Fort de plusieurs années d'expérience backend au sein d'institutions
+                        bancaires, de grands groupes, d'entités publiques et de startups, je maîtrise les flux de
+                        données complexes, les contraintes de sécurité strictes et les exigences des architectures
+                        modernes.</p>
                 </div>
                 <div data-lang="en">
                     <h2 class="fw-bold mb-4">The Dual-Profile Advantage</h2>
-                    <p class="text-muted">As a <strong>Freelance Software Engineer</strong> and an <strong>Aviation Flight Instructor</strong>, I build applications with the same high-standard checklist mindset required to fly commercial aircraft. Safe, reliable, optimized, and heavily tested.</p>
-                    <p class="text-muted">With years of backend experience working for banking institutions, major corporations, public entities, and startups, I tackle complex data flows, strict security constraints, and modern full-stack requirements.</p>
+                    <p class="text-muted">As a <strong>Freelance Software Engineer</strong> and an <strong>Aviation
+                        Flight Instructor</strong>, I build applications with the same high-standard checklist mindset
+                        required to fly commercial aircraft. Safe, reliable, optimized, and heavily tested.</p>
+                    <p class="text-muted">With years of backend experience working for banking institutions, major
+                        corporations, public entities, and startups, I tackle complex data flows, strict security
+                        constraints, and modern full-stack requirements.</p>
                 </div>
             </div>
 
@@ -330,38 +403,56 @@
                 <div class="row g-4">
                     <div class="col-12">
                         <div class="d-flex align-items-start">
-                            <div class="badge bg-danger-subtle text-danger p-2 rounded-3 me-3 mt-1"><i class="bi bi-lightning-charge-fill fs-5"></i></div>
+                            <div class="badge bg-danger-subtle text-danger p-2 rounded-3 me-3 mt-1"><i
+                                    class="bi bi-lightning-charge-fill fs-5"></i></div>
                             <div>
                                 <h5 class="fw-bold mb-1">Laravel Framework</h5>
-                                <p class="text-muted small mb-2" data-lang="fr">Expertise avancée en architecture backend, conception d'APIs sécurisées et microservices.</p>
-                                <p class="text-muted small mb-2" data-lang="en">Advanced expertise in backend architecture, building secure APIs, and microservices.</p>
-                                <div><span class="skill-badge">Eloquent ORM</span><span class="skill-badge">REST APIs</span><span class="skill-badge">Query Optimization</span><span class="skill-badge">Queues & Jobs</span></div>
+                                <p class="text-muted small mb-2" data-lang="fr">Expertise avancée en architecture
+                                    backend, conception d'APIs sécurisées et microservices.</p>
+                                <p class="text-muted small mb-2" data-lang="en">Advanced expertise in backend
+                                    architecture, building secure APIs, and microservices.</p>
+                                <div><span class="skill-badge">Eloquent ORM</span><span
+                                        class="skill-badge">REST APIs</span><span
+                                        class="skill-badge">Query Optimization</span><span class="skill-badge">Queues & Jobs</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 mt-4">
                         <div class="d-flex align-items-start">
-                            <div class="badge bg-dark-subtle text-dark p-2 rounded-3 me-3 mt-1"><i class="bi bi-code-slash fs-5"></i></div>
+                            <div class="badge bg-dark-subtle text-dark p-2 rounded-3 me-3 mt-1"><i
+                                    class="bi bi-code-slash fs-5"></i></div>
                             <div>
                                 <h5 class="fw-bold mb-1">PHP & Modern Ecosystem</h5>
-                                <p class="text-muted small mb-2" data-lang="fr">Solides fondations en design patterns OOP, suites de tests et frameworks MVC.</p>
-                                <p class="text-muted small mb-2" data-lang="en">Strong foundations in OOP patterns, testing suites, and MVC frameworks.</p>
-                                <div><span class="skill-badge">PHP 7/8</span><span class="skill-badge">Symfony</span><span class="skill-badge">TDD (Pest/PHPUnit)</span><span class="skill-badge">Clean Architecture</span></div>
+                                <p class="text-muted small mb-2" data-lang="fr">Solides fondations en design patterns
+                                    OOP, suites de tests et frameworks MVC.</p>
+                                <p class="text-muted small mb-2" data-lang="en">Strong foundations in OOP patterns,
+                                    testing suites, and MVC frameworks.</p>
+                                <div><span class="skill-badge">PHP 7/8</span><span
+                                        class="skill-badge">Symfony</span><span
+                                        class="skill-badge">TDD (Pest/PHPUnit)</span><span class="skill-badge">Clean Architecture</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 mt-4">
                         <div class="d-flex align-items-start">
-                            <div class="badge bg-primary-subtle text-primary p-2 rounded-3 me-3 mt-1"><i class="bi bi-layers-half fs-5"></i></div>
+                            <div class="badge bg-primary-subtle text-primary p-2 rounded-3 me-3 mt-1"><i
+                                    class="bi bi-layers-half fs-5"></i></div>
                             <div>
                                 <h5 class="fw-bold mb-1">Frontend & Systems</h5>
-                                <p class="text-muted small mb-2" data-lang="fr">Intégration d'interfaces fluides et réactives combinées à une gestion rigoureuse des bases de données.</p>
-                                <p class="text-muted small mb-2" data-lang="en">Integration of smooth and responsive frontends coupled with rigorous database management.</p>
-                                <div><span class="skill-badge">HTML5 / CSS3</span><span class="skill-badge">Bootstrap 5</span><span class="skill-badge">JavaScript (Vue.js)</span><span class="skill-badge">MySQL / MongoDB</span></div>
+                                <p class="text-muted small mb-2" data-lang="fr">Intégration d'interfaces fluides et
+                                    réactives combinées à une gestion rigoureuse des bases de données.</p>
+                                <p class="text-muted small mb-2" data-lang="en">Integration of smooth and responsive
+                                    frontends coupled with rigorous database management.</p>
+                                <div><span class="skill-badge">HTML5 / CSS3</span><span
+                                        class="skill-badge">Bootstrap 5</span><span class="skill-badge">JavaScript (Vue.js)</span><span
+                                        class="skill-badge">MySQL / MongoDB</span></div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
 </section>
@@ -382,8 +473,12 @@
                         <h4 class="fw-bold mt-1" data-lang="fr">Instructeur de Vol (FI-FIN)</h4>
                         <h4 class="fw-bold mt-1" data-lang="en">Flight Instructor (FI-FIN)</h4>
                         <h5 class="text-muted fs-6 mb-2">ASTONFLY & Cap Aero</h5>
-                        <p class="text-secondary" data-lang="fr">Instruction de haut niveau pour les phases de formation avancée des équipages, accent mis sur les checklists, les facteurs humains et l'excellence technique.</p>
-                        <p class="text-secondary" data-lang="en">Providing high-end instruction for advanced flight crew training and flight phases, emphasizing checklists, human factors, and technical excellence.</p>
+                        <p class="text-secondary" data-lang="fr">Instruction de haut niveau pour les phases de formation
+                            avancée des équipages, accent mis sur les checklists, les facteurs humains et l'excellence
+                            technique.</p>
+                        <p class="text-secondary" data-lang="en">Providing high-end instruction for advanced flight crew
+                            training and flight phases, emphasizing checklists, human factors, and technical
+                            excellence.</p>
                     </div>
 
                     <!-- 2. Mars 2025 - Présent | Tech: SSF Freelance -->
@@ -393,8 +488,10 @@
                         <h4 class="fw-bold mt-1" data-lang="fr">Développeur Web Laravel (Freelance)</h4>
                         <h4 class="fw-bold mt-1" data-lang="en">Freelance Laravel Engineer</h4>
                         <h5 class="text-muted fs-6 mb-2">Scutum Security First (SSF)</h5>
-                        <p class="text-secondary" data-lang="fr">Ingénierie d'architectures web d'entreprise à haute sécurité, gestion de logique backend sensible et standardisation de modules applicatifs.</p>
-                        <p class="text-secondary" data-lang="en">Engineering high-security corporate web architectures, handling sensitive backend logic, and standardizing application modules.</p>
+                        <p class="text-secondary" data-lang="fr">Ingénierie d'architectures web d'entreprise à haute
+                            sécurité, gestion de logique backend sensible et standardisation de modules applicatifs.</p>
+                        <p class="text-secondary" data-lang="en">Engineering high-security corporate web architectures,
+                            handling sensitive backend logic, and standardizing application modules.</p>
                     </div>
 
                     <!-- 3. Février 2022 - Présent | Tech: OpenClassrooms -->
@@ -404,8 +501,10 @@
                         <h4 class="fw-bold mt-1" data-lang="fr">Mentor & Évaluateur - Développement Web</h4>
                         <h4 class="fw-bold mt-1" data-lang="en">Mentor & Evaluator - Web Development</h4>
                         <h5 class="text-muted fs-6 mb-2">OpenClassrooms</h5>
-                        <p class="text-secondary" data-lang="fr">Accompagnement des futurs développeurs sur les bonnes pratiques d'architecture dans les environnements HTML5, CSS3, PHP8 et Symfony.</p>
-                        <p class="text-secondary" data-lang="en">Guiding upcoming developers through architectural best practices including HTML5, CSS3, PHP8, and Symfony environments.</p>
+                        <p class="text-secondary" data-lang="fr">Accompagnement des futurs développeurs sur les bonnes
+                            pratiques d'architecture dans les environnements HTML5, CSS3, PHP8 et Symfony.</p>
+                        <p class="text-secondary" data-lang="en">Guiding upcoming developers through architectural best
+                            practices including HTML5, CSS3, PHP8, and Symfony environments.</p>
                     </div>
 
                     <!-- 4. Novembre 2021 - Présent | Aviation: AC Versailles -->
@@ -415,8 +514,12 @@
                         <h4 class="fw-bold mt-1" data-lang="fr">Instructeur de Vol (FI-FIN)</h4>
                         <h4 class="fw-bold mt-1" data-lang="en">Flight Instructor (FI-FIN)</h4>
                         <h5 class="text-muted fs-6 mb-2">Aéroclub de Versailles</h5>
-                        <p class="text-secondary" data-lang="fr">Instruction au pilotage, formation théorique et pratique des élèves pilotes, et suivi de la sécurité des vols au sein d'une structure associative dynamique.</p>
-                        <p class="text-secondary" data-lang="en">Flight instruction, providing theoretical and practical training for student pilots, and ensuring flight safety operations within a dynamic airfield environment.</p>
+                        <p class="text-secondary" data-lang="fr">Instruction au pilotage, formation théorique et
+                            pratique des élèves pilotes, et suivi de la sécurité des vols au sein d'une structure
+                            associative dynamique.</p>
+                        <p class="text-secondary" data-lang="en">Flight instruction, providing theoretical and practical
+                            training for student pilots, and ensuring flight safety operations within a dynamic airfield
+                            environment.</p>
                     </div>
 
                     <!-- 5. Octobre 2021 - Novembre 2021 | Formation Aviation: FlyTeam -->
@@ -425,8 +528,10 @@
                         <span class="text-aviation fw-bold small" data-lang="en">October 2021 - November 2021</span>
                         <h4 class="fw-bold mt-1">Flight Instructor (A)</h4>
                         <h5 class="text-muted fs-6 mb-2">FlyTeam</h5>
-                        <p class="text-secondary" data-lang="fr">Formation qualification d'instructeur de vol avion, apprentissage de la pédagogie au cockpit et gestion de la sécurité des vols.</p>
-                        <p class="text-secondary" data-lang="en">Flight Instructor training, developing cockpit pedagogy skills and flight instruction safety standards.</p>
+                        <p class="text-secondary" data-lang="fr">Formation qualification d'instructeur de vol avion,
+                            apprentissage de la pédagogie au cockpit et gestion de la sécurité des vols.</p>
+                        <p class="text-secondary" data-lang="en">Flight Instructor training, developing cockpit pedagogy
+                            skills and flight instruction safety standards.</p>
                     </div>
 
                     <!-- 6. Juillet 2021 - Mars 2025 | Tech: SSF Past -->
@@ -436,8 +541,10 @@
                         <h4 class="fw-bold mt-1" data-lang="fr">Développeur Web</h4>
                         <h4 class="fw-bold mt-1" data-lang="en">Web Developer</h4>
                         <h5 class="text-muted fs-6 mb-2">Scutum Security First (SSF)</h5>
-                        <p class="text-secondary" data-lang="fr">Développement d'applications structurelles internes et grand public. Stack principale axée sur PHP Laravel, Bootstrap et MySQL.</p>
-                        <p class="text-secondary" data-lang="en">Developed public-facing and internal structural applications. Core stack focused on PHP Laravel, Bootstrap, and MySQL.</p>
+                        <p class="text-secondary" data-lang="fr">Développement d'applications structurelles internes et
+                            grand public. Stack principale axée sur PHP Laravel, Bootstrap et MySQL.</p>
+                        <p class="text-secondary" data-lang="en">Developed public-facing and internal structural
+                            applications. Core stack focused on PHP Laravel, Bootstrap, and MySQL.</p>
                     </div>
 
                     <!-- 7. Mars 2020 - Présent | Tech: Projets Autonomes -->
@@ -447,8 +554,12 @@
                         <h4 class="fw-bold mt-1" data-lang="fr">Développeur Web Indépendant / Concepteur de Sites</h4>
                         <h4 class="fw-bold mt-1" data-lang="en">Independent Web Developer / Website Creator</h4>
                         <h5 class="text-muted fs-6 mb-2">Projets Autonomes</h5>
-                        <p class="text-secondary" data-lang="fr">Conception, développement et déploiement de sites internet sur mesure. Gestion de la stack technique, de l'UI/UX et de l'optimisation des performances pour divers clients.</p>
-                        <p class="text-secondary" data-lang="en">Design, development, and deployment of custom websites. Managing full technical stacks, UI/UX design, and performance optimization for various clients.</p>
+                        <p class="text-secondary" data-lang="fr">Conception, développement et déploiement de sites
+                            internet sur mesure. Gestion de la stack technique, de l'UI/UX et de l'optimisation des
+                            performances pour divers clients.</p>
+                        <p class="text-secondary" data-lang="en">Design, development, and deployment of custom websites.
+                            Managing full technical stacks, UI/UX design, and performance optimization for various
+                            clients.</p>
                     </div>
 
                     <!-- 8. Mars 2020 - Février 2022 | Tech: bryf -->
@@ -458,8 +569,10 @@
                         <h4 class="fw-bold mt-1" data-lang="fr">Co-fondateur & Développeur Web Lead</h4>
                         <h4 class="fw-bold mt-1" data-lang="en">Co-founder & Lead Web Developer</h4>
                         <h5 class="text-muted fs-6 mb-2">bryf.</h5>
-                        <p class="text-secondary" data-lang="fr">Co-fondation et ingénierie de la plateforme technique initiale en utilisant PHP 7, Laravel 8, jQuery/VueJS, MongoDB et MySQL.</p>
-                        <p class="text-secondary" data-lang="en">Co-founded and engineered the foundational platform stack using PHP 7, Laravel 8, jQuery/VueJS, MongoDB, and MySQL.</p>
+                        <p class="text-secondary" data-lang="fr">Co-fondation et ingénierie de la plateforme technique
+                            initiale en utilisant PHP 7, Laravel 8, jQuery/VueJS, MongoDB et MySQL.</p>
+                        <p class="text-secondary" data-lang="en">Co-founded and engineered the foundational platform
+                            stack using PHP 7, Laravel 8, jQuery/VueJS, MongoDB, and MySQL.</p>
                     </div>
 
                     <!-- 9. Janvier 2020 - Avril 2021 | Formation Aviation: FlyBy -->
@@ -468,8 +581,11 @@
                         <span class="text-aviation fw-bold small" data-lang="en">January 2020 - April 2021</span>
                         <h4 class="fw-bold mt-1">ATPL(A), Airline/Commercial/Professional Pilot and Flight Crew</h4>
                         <h5 class="text-muted fs-6 mb-2">FlyBy</h5>
-                        <p class="text-secondary" data-lang="fr">Formation intensive théorique et pratique de pilote de ligne. Étude des systèmes complexes, de la navigation et vol aux instruments.</p>
-                        <p class="text-secondary" data-lang="en">Intensive theoretical and practical airline transport pilot license training. Studies covering complex aircraft systems, navigation, and instrument rating.</p>
+                        <p class="text-secondary" data-lang="fr">Formation intensive théorique et pratique de pilote de
+                            ligne. Étude des systèmes complexes, de la navigation et vol aux instruments.</p>
+                        <p class="text-secondary" data-lang="en">Intensive theoretical and practical airline transport
+                            pilot license training. Studies covering complex aircraft systems, navigation, and
+                            instrument rating.</p>
                     </div>
 
                     <!-- 10. Octobre 2018 - Décembre 2019 | Tech: Infopro -->
@@ -479,8 +595,10 @@
                         <h4 class="fw-bold mt-1" data-lang="fr">Ingénieur Informatique / Développeur Web</h4>
                         <h4 class="fw-bold mt-1" data-lang="en">Computer Science Engineer / Web Developer</h4>
                         <h5 class="text-muted fs-6 mb-2">Infopro Digital (via Alphonse)</h5>
-                        <p class="text-secondary" data-lang="fr">Développement logiciel cœur gérant des systèmes de données complexes sur des structures héritées PHP 5 et modernes PHP 7.</p>
-                        <p class="text-secondary" data-lang="en">Core software development managing complex data systems across legacy PHP 5 and modern PHP 7 structures.</p>
+                        <p class="text-secondary" data-lang="fr">Développement logiciel cœur gérant des systèmes de
+                            données complexes sur des structures héritées PHP 5 et modernes PHP 7.</p>
+                        <p class="text-secondary" data-lang="en">Core software development managing complex data systems
+                            across legacy PHP 5 and modern PHP 7 structures.</p>
                     </div>
 
                     <!-- 11. 2016 - 2018 | Formation Tech: H3 Hitema -->
@@ -489,8 +607,10 @@
                         <h4 class="fw-bold mt-1" data-lang="fr">Master en Ingénierie Informatique</h4>
                         <h4 class="fw-bold mt-1" data-lang="en">Master's Degree in Computer Engineering</h4>
                         <h5 class="text-muted fs-6 mb-2">H3 Hitema</h5>
-                        <p class="text-secondary" data-lang="fr">Spécialisation en développement logiciel, architecture système et gestion de projets agiles.</p>
-                        <p class="text-secondary" data-lang="en">Specialization in software development, systems architecture, and agile project management.</p>
+                        <p class="text-secondary" data-lang="fr">Spécialisation en développement logiciel, architecture
+                            système et gestion de projets agiles.</p>
+                        <p class="text-secondary" data-lang="en">Specialization in software development, systems
+                            architecture, and agile project management.</p>
                     </div>
 
                     <!-- 12. 2013 - 2016 | Formation Tech: UPEC -->
@@ -499,8 +619,11 @@
                         <h4 class="fw-bold mt-1" data-lang="fr">Licence en Mathématique Informatique</h4>
                         <h4 class="fw-bold mt-1" data-lang="en">Bachelor's Degree in Computer Science</h4>
                         <h5 class="text-muted fs-6 mb-2">Université Paris-Est Créteil (UPEC)</h5>
-                        <p class="text-secondary" data-lang="fr">Acquisition des fondamentaux scientifiques et techniques : algorithmique, structures de données, bases de données et programmation système.</p>
-                        <p class="text-secondary" data-lang="en">Acquisition of core scientific and technical foundations: algorithms, data structures, databases, and systems programming.</p>
+                        <p class="text-secondary" data-lang="fr">Acquisition des fondamentaux scientifiques et
+                            techniques : algorithmique, structures de données, bases de données et programmation
+                            système.</p>
+                        <p class="text-secondary" data-lang="en">Acquisition of core scientific and technical
+                            foundations: algorithms, data structures, databases, and systems programming.</p>
                     </div>
 
                 </div>
@@ -514,8 +637,10 @@
     <div class="container py-4">
         <h2 class="fw-bold text-center mb-2" data-lang="fr">Expertise & Projets Clés</h2>
         <h2 class="fw-bold text-center mb-2" data-lang="en">Expertise & Main Projects</h2>
-        <p class="text-muted text-center mb-5" data-lang="fr">Un aperçu des environnements complexes sur lesquels j'interviens au quotidien.</p>
-        <p class="text-muted text-center mb-5" data-lang="en">A glimpse into the complex environments I build and maintain daily.</p>
+        <p class="text-muted text-center mb-5" data-lang="fr">Un aperçu des environnements complexes sur lesquels
+            j'interviens au quotidien.</p>
+        <p class="text-muted text-center mb-5" data-lang="en">A glimpse into the complex environments I build and
+            maintain daily.</p>
 
         <div class="row g-4">
             <!-- Project 1 -->
@@ -528,8 +653,11 @@
                         </div>
                         <h5 class="fw-bold card-title mb-2" data-lang="fr">Systèmes Sécurisés d'Entreprise</h5>
                         <h5 class="fw-bold card-title mb-2" data-lang="en">Secure Corporate Architectures</h5>
-                        <p class="card-text text-muted small" data-lang="fr">Refonte globale de back-offices critiques, isolation des flux de données sensibles et implémentation de processus d'authentification stricts.</p>
-                        <p class="card-text text-muted small" data-lang="en">Complete overhaul of critical back-offices, isolating sensitive data traffic, and deploying strict authentication flows.</p>
+                        <p class="card-text text-muted small" data-lang="fr">Refonte globale de back-offices critiques,
+                            isolation des flux de données sensibles et implémentation de processus d'authentification
+                            stricts.</p>
+                        <p class="card-text text-muted small" data-lang="en">Complete overhaul of critical back-offices,
+                            isolating sensitive data traffic, and deploying strict authentication flows.</p>
                     </div>
                 </div>
             </div>
@@ -543,8 +671,11 @@
                         </div>
                         <h5 class="fw-bold card-title mb-2" data-lang="fr">APIs RESTful Haute Performance</h5>
                         <h5 class="fw-bold card-title mb-2" data-lang="en">High-Performance REST APIs</h5>
-                        <p class="card-text text-muted small" data-lang="fr">Conception de points d'accès scalables pour applications mobiles et tierces, optimisation drastique des requêtes SQL complexes et mise en cache stratégique.</p>
-                        <p class="card-text text-muted small" data-lang="en">Designing scalable entry points for mobile apps and third-party systems, optimizing heavy SQL queries, and strategic data caching.</p>
+                        <p class="card-text text-muted small" data-lang="fr">Conception de points d'accès scalables pour
+                            applications mobiles et tierces, optimisation drastique des requêtes SQL complexes et mise
+                            en cache stratégique.</p>
+                        <p class="card-text text-muted small" data-lang="en">Designing scalable entry points for mobile
+                            apps and third-party systems, optimizing heavy SQL queries, and strategic data caching.</p>
                     </div>
                 </div>
             </div>
@@ -558,8 +689,12 @@
                         </div>
                         <h5 class="fw-bold card-title mb-2" data-lang="fr">Outils & Pédagogie Aéronautique</h5>
                         <h5 class="fw-bold card-title mb-2" data-lang="en">Aviation Tech & Pedagogy</h5>
-                        <p class="card-text text-muted small" data-lang="fr">Développement d'outils internes d'évaluation de performance pour élèves-pilotes, basés sur des grilles d'analyse de compétences et de gestion de risques.</p>
-                        <p class="card-text text-muted small" data-lang="en">Building metrics tools evaluating student-pilot flight logs, structured around core pilot competencies and risk assessment models.</p>
+                        <p class="card-text text-muted small" data-lang="fr">Développement d'outils internes
+                            d'évaluation de performance pour élèves-pilotes, basés sur des grilles d'analyse de
+                            compétences et de gestion de risques.</p>
+                        <p class="card-text text-muted small" data-lang="en">Building metrics tools evaluating
+                            student-pilot flight logs, structured around core pilot competencies and risk assessment
+                            models.</p>
                     </div>
                 </div>
             </div>
@@ -572,13 +707,17 @@
     <div class="container py-4 text-center">
         <h2 class="fw-bold mb-3" data-lang="fr">Planifions votre prochain décollage technique</h2>
         <h2 class="fw-bold mb-3" data-lang="en">Planning Your Next Technical Take-Off?</h2>
-        <p class="text-muted lead mb-4 mx-auto" style="max-width: 600px;" data-lang="fr">Que ce soit pour auditer une codebase Laravel, concevoir une architecture robuste ou encadrer des équipes techniques, échangeons sur vos objectifs.</p>
-        <p class="text-muted lead mb-4 mx-auto" style="max-width: 600px;" data-lang="en">Whether you need a full Laravel codebase audit, scalable backend engineering, or technical mentorship, let’s discuss your targets.</p>
+        <p class="text-muted lead mb-4 mx-auto" style="max-width: 600px;" data-lang="fr">Que ce soit pour auditer une
+            codebase Laravel, concevoir une architecture robuste ou encadrer des équipes techniques, échangeons sur vos
+            objectifs.</p>
+        <p class="text-muted lead mb-4 mx-auto" style="max-width: 600px;" data-lang="en">Whether you need a full Laravel
+            codebase audit, scalable backend engineering, or technical mentorship, let’s discuss your targets.</p>
         <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
             <a href="mailto:facorat.company@gmail.com" class="btn btn-dark btn-lg px-4">
                 <i class="bi bi-envelope-fill me-2"></i>facorat.company@gmail.com
             </a>
-            <a href="https://www.linkedin.com/in/maxime-facorat-0470a057/" target="_blank" class="btn btn-linkedin btn-lg px-4">
+            <a href="https://www.linkedin.com/in/maxime-facorat-0470a057/" target="_blank"
+               class="btn btn-linkedin btn-lg px-4">
                 <i class="bi bi-linkedin me-2"></i>LinkedIn Profile
             </a>
         </div>
