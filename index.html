@@ -704,22 +704,53 @@
 
 <!-- Contact Section -->
 <section id="contact" class="py-5 bg-light">
-    <div class="container py-4 text-center">
-        <h2 class="fw-bold mb-3" data-lang="fr">Planifions votre prochain décollage technique</h2>
-        <h2 class="fw-bold mb-3" data-lang="en">Planning Your Next Technical Take-Off?</h2>
-        <p class="text-muted lead mb-4 mx-auto" style="max-width: 600px;" data-lang="fr">Que ce soit pour auditer une
-            codebase Laravel, concevoir une architecture robuste ou encadrer des équipes techniques, échangeons sur vos
-            objectifs.</p>
-        <p class="text-muted lead mb-4 mx-auto" style="max-width: 600px;" data-lang="en">Whether you need a full Laravel
-            codebase audit, scalable backend engineering, or technical mentorship, let’s discuss your targets.</p>
-        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-            <a href="mailto:facorat.company@gmail.com" class="btn btn-dark btn-lg px-4">
-                <i class="bi bi-envelope-fill me-2"></i>facorat.company@gmail.com
-            </a>
-            <a href="https://www.linkedin.com/in/maxime-facorat-0470a057/" target="_blank"
-               class="btn btn-linkedin btn-lg px-4">
-                <i class="bi bi-linkedin me-2"></i>LinkedIn Profile
-            </a>
+    <div class="container py-4">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold mb-3" data-lang="fr">Planifions votre prochain décollage technique</h2>
+            <h2 class="fw-bold mb-3" data-lang="en">Planning Your Next Technical Take-Off?</h2>
+            <p class="text-muted lead mb-4 mx-auto" style="max-width: 600px;" data-lang="fr">Que ce soit pour auditer une codebase Laravel, concevoir une architecture robuste ou encadrer des équipes techniques, échangeons sur vos objectifs.</p>
+            <p class="text-muted lead mb-4 mx-auto" style="max-width: 600px;" data-lang="en">Whether you need a full Laravel codebase audit, scalable backend engineering, or technical mentorship, let’s discuss your targets.</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <!-- Formulaire FormSubmit Complet -->
+                <form action="https://formsubmit.co/facorat.company@gmail.com" method="POST" class="bg-white p-4 rounded-4 shadow-sm border">
+                    <!-- Configuration FormSubmit -->
+                    <input type="hidden" name="_next" value="https://facoratmaxime.github.io/facorat-company/">
+                    <input type="hidden" name="_subject" value="Nouveau contact depuis le Portfolio !">
+
+                    <!-- Champ Email de l'utilisateur -->
+                    <div class="mb-3 text-start">
+                        <label for="user_email" class="form-label fw-medium small text-secondary">
+                            <span data-lang="fr">Votre adresse e-mail</span>
+                            <span data-lang="en">Your Email Address</span>
+                        </label>
+                        <input type="email" name="email" id="user_email" class="form-control" placeholder="name@example.com" required>
+                    </div>
+
+                    <!-- Champ Message -->
+                    <div class="mb-4 text-start">
+                        <label for="user_message" class="form-label fw-medium small text-secondary">
+                            <span data-lang="fr">Votre message</span>
+                            <span data-lang="en">Your Message</span>
+                        </label>
+                        <textarea name="message" id="user_message" class="form-control" rows="4" placeholder="..." required></textarea>
+                    </div>
+
+                    <!-- Boutons d'action -->
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button type="submit" class="btn btn-laravel btn-lg px-4 flex-grow-1 flex-sm-grow-0">
+                            <i class="bi bi-send-fill me-2"></i>
+                            <span data-lang="fr">Envoyer le message</span>
+                            <span data-lang="en">Send Message</span>
+                        </button>
+                        <a href="https://www.linkedin.com/in/maxime-facorat-0470a057/" target="_blank" class="btn btn-linkedin btn-lg px-4 flex-grow-1 flex-sm-grow-0">
+                            <i class="bi bi-linkedin me-2"></i>LinkedIn Profile
+                        </a>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </section>
