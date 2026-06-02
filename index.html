@@ -12,7 +12,9 @@
         :root {
             --laravel-color: #FF2D20;
             --aviation-blue: #0284c7;
-            --dark-bg: #0f172a;
+            --linkedin-color: #0077b5;
+            --light-hero-bg: #f8fafc;
+            --logo-orange: #f5b349;
         }
         .text-laravel { color: var(--laravel-color); }
         .text-aviation { color: var(--aviation-blue); }
@@ -25,9 +27,27 @@
             background-color: #e0261a;
             color: white;
         }
+        .btn-linkedin {
+            background-color: var(--linkedin-color);
+            color: white;
+            border: none;
+        }
+        .btn-linkedin:hover {
+            background-color: #005a8a;
+            color: white;
+        }
+
+        /* Light Topbar Layout & Orange Accent Border */
+        .navbar-light-custom {
+            background-color: #ffffff;
+            border-bottom: 3px solid var(--logo-orange);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
         .hero-section {
-            background: linear-gradient(135deg, var(--dark-bg) 0%, #1e293b 100%);
-            min-height: 75vh;
+            background: linear-gradient(135deg, var(--light-hero-bg) 0%, #e2e8f0 100%);
+            min-height: 70vh;
+            border-bottom: 1px solid #cbd5e1;
         }
         /* Custom Timeline style */
         .timeline {
@@ -59,89 +79,173 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
         }
+        .skill-badge {
+            background-color: #ffffff;
+            color: #334155;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            display: inline-block;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid #cbd5e1;
+        }
+        /* Logo styling for Navbar */
+        .navbar-logo {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<!-- Navbar Light with Logo, Name and Dual Icons -->
+<nav class="navbar navbar-expand-lg navbar-light navbar-light-custom sticky-top">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#">
-            <i class="bi bi-airplane text-aviation me-1"></i> Maxime <span class="text-laravel">Facorat</span>
+        <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="#">
+            <img src="logo.png" alt="Facorat Company Logo" class="navbar-logo me-2 rounded-2">
+            <span>Maxime <span class="text-laravel">Facorat</span></span>
+            <span class="ms-2 d-flex gap-1 fs-5">
+                    <i class="bi bi-code-slash text-laravel" title="Developer"></i>
+                    <i class="bi bi-airplane text-aviation" title="Flight Instructor"></i>
+                </span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-side-icon"><i class="bi bi-list text-white fs-2"></i></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto text-center">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Expertise</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <ul class="navbar-nav ms-auto text-center align-items-center">
+                <li class="nav-item"><a class="nav-link fw-medium" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link fw-medium" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link fw-medium" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link fw-medium" href="#projects">Expertise</a></li>
+                <li class="nav-item"><a class="nav-link fw-medium" href="#contact">Contact</a></li>
+                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                    <a class="btn btn-sm btn-linkedin px-3" href="https://www.linkedin.com/in/maxime-facorat-0470a057/" target="_blank">
+                        <i class="bi bi-linkedin me-1"></i> LinkedIn
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
 
 <!-- Hero Section -->
-<section class="hero-section d-flex align-items-center text-white text-center text-md-start py-5">
+<section class="hero-section d-flex align-items-center text-dark text-center text-md-start py-5">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-8">
-                <h1 class="display-4 fw-bold mb-3">Freelance Laravel Engineer <br>& <span class="text-aviation">Flight Instructor</span></h1>
-                <p class="lead text-secondary mb-4">Master's degree in Computer Engineering combined with an Airline Transport Pilot License (ATPL). I bring cockpit-level rigor, structural discipline, and complex problem-solving to high-performance Laravel architectures.</p>
-                <div class="d-grid d-md-flex gap-3">
+                <h1 class="display-4 fw-bold mb-3 text-slate-900">Freelance Laravel Engineer <br>& <span class="text-aviation">Flight Instructor</span></h1>
+                <p class="lead text-muted mb-4">Master's degree in Computer Engineering combined with an Airline Transport Pilot License (ATPL). I bring cockpit-level rigor, structural discipline, and complex problem-solving to high-performance Laravel architectures.</p>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start">
                     <a href="#experience" class="btn btn-laravel btn-lg px-4">Track Record</a>
-                    <a href="#contact" class="btn btn-outline-light btn-lg px-4">Get In Touch</a>
+                    <a href="https://www.linkedin.com/in/maxime-facorat-0470a057/" target="_blank" class="btn btn-linkedin btn-lg px-4">
+                        <i class="bi bi-linkedin me-2"></i>Connect on LinkedIn
+                    </a>
+                    <a href="#contact" class="btn btn-outline-dark btn-lg px-4">Get In Touch</a>
                 </div>
             </div>
+            <!-- Right column logo integration from IMG_0056.jpg -->
             <div class="col-md-4 text-center d-none d-md-block">
-                <i class="bi bi-shield-check text-laravel block mb-2" style="font-size: 5rem;"></i>
-                <i class="bi bi-airplane text-aviation" style="font-size: 7rem;"></i>
+                <img src="logo.png" alt="Facorat Company" class="img-fluid rounded-4 shadow-sm border" style="max-width: 85%;">
             </div>
         </div>
     </div>
 </section>
 
-<!-- About Section -->
-<section id="about" class="py-5 bg-light">
+<!-- About & Skills Section -->
+<section id="about" class="py-5 bg-white">
     <div class="container py-4">
         <div class="row g-5">
-            <div class="col-lg-6">
+            <div class="col-lg-5">
                 <h2 class="fw-bold mb-4">The Dual-Profile Advantage</h2>
                 <p class="text-muted">As a <strong>Freelance Software Engineer</strong> and an <strong>Aviation Flight Instructor</strong>, I build applications with the same high-standard checklist mindset required to fly commercial aircraft. Safe, reliable, optimized, and heavily tested.</p>
                 <p class="text-muted">With years of backend experience working for banking institutions, major corporations, public entities, and startups, I tackle complex data flows, strict security constraints, and modern full-stack requirements.</p>
             </div>
-            <div class="col-lg-6" id="skills">
+
+            <!-- Skills Section (Key Points) -->
+            <div class="col-lg-7" id="skills">
                 <h3 class="fw-bold mb-4">Engineering Core</h3>
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-medium">Laravel Framework (Eloquent, APIs, Performance)</span>
-                        <span class="text-muted">95%</span>
+
+                <div class="row g-4">
+                    <!-- Laravel -->
+                    <div class="col-100">
+                        <div class="d-flex align-items-start">
+                            <div class="badge bg-danger-subtle text-danger p-2 rounded-3 me-3 mt-1">
+                                <i class="bi bi-lightning-charge-fill fs-5"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Laravel Framework</h5>
+                                <p class="text-muted small mb-2">Advanced expertise in backend architecture, building secure APIs, and microservices.</p>
+                                <div>
+                                    <span class="skill-badge">Eloquent ORM</span>
+                                    <span class="skill-badge">REST APIs</span>
+                                    <span class="skill-badge">Query Optimization</span>
+                                    <span class="skill-badge">Queues & Jobs</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="progress" style="height: 8px;"><div class="progress-bar bg-danger" style="width: 95%"></div></div>
-                </div>
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-medium">PHP 7/8 & Ecosystem (Symfony, OOP, TDD)</span>
-                        <span class="text-muted">90%</span>
+
+                    <!-- PHP & Ecosystem -->
+                    <div class="col-100 mt-4">
+                        <div class="d-flex align-items-start">
+                            <div class="badge bg-dark-subtle text-dark p-2 rounded-3 me-3 mt-1">
+                                <i class="bi bi-code-slash fs-5"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">PHP & Modern Ecosystem</h5>
+                                <p class="text-muted small mb-2">Strong foundations in OOP patterns, testing suites, and MVC frameworks.</p>
+                                <div>
+                                    <span class="skill-badge">PHP 7/8</span>
+                                    <span class="skill-badge">Symfony</span>
+                                    <span class="skill-badge">TDD (Pest/PHPUnit)</span>
+                                    <span class="skill-badge">Clean Architecture</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="progress" style="height: 8px;"><div class="progress-bar bg-dark" style="width: 90%"></div></div>
-                </div>
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-medium">Databases & Data Stores (MySQL, MongoDB, Redis)</span>
-                        <span class="text-muted">85%</span>
+
+                    <!-- Databases -->
+                    <div class="col-100 mt-4">
+                        <div class="d-flex align-items-start">
+                            <div class="badge bg-primary-subtle text-primary p-2 rounded-3 me-3 mt-1">
+                                <i class="bi bi-database-fill fs-5"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Databases & Data Stores</h5>
+                                <p class="text-muted small mb-2">Designing and scaling structured relational models and caching infrastructure.</p>
+                                <div>
+                                    <span class="skill-badge">MySQL</span>
+                                    <span class="skill-badge">MongoDB</span>
+                                    <span class="skill-badge">Redis</span>
+                                    <span class="skill-badge">Data Migrations</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="progress" style="height: 8px;"><div class="progress-bar bg-primary" style="width: 85%"></div></div>
-                </div>
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-medium">Frontend Stack (JavaScript, VueJS, Bootstrap, Tailwind)</span>
-                        <span class="text-muted">80%</span>
+
+                    <!-- Frontend Stack -->
+                    <div class="col-100 mt-4">
+                        <div class="d-flex align-items-start">
+                            <div class="badge bg-info-subtle text-info p-2 rounded-3 me-3 mt-1">
+                                <i class="bi bi-window-sidebar fs-5"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Frontend Stack</h5>
+                                <p class="text-muted small mb-2">Building responsive, reactive, and highly dynamic client interfaces.</p>
+                                <div>
+                                    <span class="skill-badge">JavaScript (ES6+)</span>
+                                    <span class="skill-badge">VueJS</span>
+                                    <span class="skill-badge">Tailwind CSS</span>
+                                    <span class="skill-badge">Bootstrap 5</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="progress" style="height: 8px;"><div class="progress-bar bg-info" style="width: 80%"></div></div>
+
                 </div>
             </div>
         </div>
@@ -149,7 +253,7 @@
 </section>
 
 <!-- Timeline Experience -->
-<section id="experience" class="py-5">
+<section id="experience" class="py-5 bg-light">
     <div class="container py-4">
         <h2 class="fw-bold text-center mb-5">Professional Timeline</h2>
         <div class="row justify-content-center">
@@ -172,7 +276,7 @@
                         <p class="text-secondary">Providing high-end instruction for advanced flight crew training and flight phases, emphasizing checklists, human factors, and technical excellence.</p>
                     </div>
 
-                    <!-- Tech: SSF Past (Correction here) -->
+                    <!-- Tech: SSF Past -->
                     <div class="timeline-item">
                         <span class="text-laravel fw-bold small">July 2021 - March 2025</span>
                         <h4 class="fw-bold mt-1">Web Developer</h4>
@@ -227,13 +331,13 @@
 </section>
 
 <!-- Services / Pillars of Expertise -->
-<section id="projects" class="py-5 bg-light">
+<section id="projects" class="py-5 bg-white">
     <div class="container py-4">
         <h2 class="fw-bold text-center mb-2">Core Pillars of Expertise</h2>
         <p class="text-muted text-center mb-5">Why a combined engineering and aviation background brings unfair value to your team.</p>
         <div class="row g-4">
             <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm project-card">
+                <div class="card h-100 border-0 shadow-sm project-card" style="background-color: #f8fafc;">
                     <div class="card-body p-4">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <i class="bi bi-shield-lock text-laravel fs-3"></i>
@@ -245,7 +349,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm project-card">
+                <div class="card h-100 border-0 shadow-sm project-card" style="background-color: #f8fafc;">
                     <div class="card-body p-4">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <i class="bi bi-speedometer2 text-aviation fs-3"></i>
@@ -257,7 +361,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm project-card">
+                <div class="card h-100 border-0 shadow-sm project-card" style="background-color: #f8fafc;">
                     <div class="card-body p-4">
                         <div class="bi bi-people text-primary fs-3 mb-3"></div>
                         <h5 class="card-title fw-bold">Mentoring & Training</h5>
@@ -270,13 +374,13 @@
 </section>
 
 <!-- Contact -->
-<section id="contact" class="py-5">
+<section id="contact" class="py-5 bg-light">
     <div class="container py-4">
         <h2 class="fw-bold text-center mb-2">Let's Connect</h2>
         <p class="text-muted text-center mb-5">Looking for an experienced freelance engineer to stabilize your platform or audit your architecture?</p>
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6">
-                <form action="https://formsubmit.co/facorat-company@gmail.com" method="POST" class="shadow p-4 rounded-4 bg-white">
+                <form action="https://formsubmit.co/facorat-company@gmail.com" method="POST" class="shadow-sm p-4 rounded-4 bg-white border">
                     <input type="text" name="_honey" style="display:none">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_next" value="https://facoratmaxime.github.io/facorat-company/">
@@ -307,8 +411,8 @@
     <div class="container">
         <p class="mb-2">&copy; 2026 Maxime Facorat. Built with precision & Bootstrap 5.</p>
         <div class="fs-4">
-            <a href="https://github.com" class="text-white mx-2"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/maxime-facorat-0470a057/" class="text-white mx-2"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/facoratmaxime" target="_blank" class="text-white mx-2"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/maxime-facorat-0470a057/" target="_blank" class="text-white mx-2"><i class="bi bi-linkedin"></i></a>
         </div>
     </div>
 </footer>
